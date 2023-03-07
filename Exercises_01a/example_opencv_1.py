@@ -4,7 +4,7 @@ import cv2
 
 # https://www.geeksforgeeks.org/python-opencv-cv2-imread-method/
 # img1 = cv2.imread("cam_74.pgm")
-img1 = cv2.imread("cam_74.pgm", cv2.IMREAD_GRAYSCALE)
+img1 = cv2.imread("Exercises_01a\cam_74.pgm", cv2.IMREAD_GRAYSCALE)
 
 
 
