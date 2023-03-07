@@ -14,6 +14,7 @@ import cv2
 
 #img_path = input("Please write the path to your picture: ")
 #Reads the picture file, can also implement the decesion to input the path to the chosen file
+#I made a copy of cam_74.pgm and renamed it to exercise_02a_input_01.pgm
 img1 = cv2.imread("Exercises_02ab\exercise_02a_input_01.pgm", cv2.IMREAD_GRAYSCALE)
 row = img1.shape[0]
 column = img1.shape[1]
