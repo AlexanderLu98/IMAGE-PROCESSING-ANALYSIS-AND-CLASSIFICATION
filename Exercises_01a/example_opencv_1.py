@@ -63,7 +63,7 @@ print("--------------------------------")
 
 
 print("Saving image to file output1.pgm ...")
-cv2.imwrite("output1.pgm", img2);
+cv2.imwrite("output1.pgm", img2)
 # Saving to .png :
 # cv2.imwrite("output1.png", img2);
 
