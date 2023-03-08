@@ -1,0 +1,24 @@
+Exercise 02d In this exercise we are going to compare the number of
+operations in two alternatives for computing a morphological dilation
+with structuring element.
+Let B be the MxM square structuring element.
+Let C be the 1xM 1−D horizontal structuring element:
+Let D be the Mx1 1−D vertical structuring element.
+
+Note: − The number of pixels of B is MxM
+      − The number of pixels of C and D is M.
+'X' denotes the origin of coordinates or center of the
+structuring element. B, C and D are centered structuring
+elements.
+
+It can be observed that the following property holds:
+B = dilate_C (D) = dilate_D (C).
+
+Estimate the number or 'max' operations that must be computed in
+order to process a NxN square input image using the following
+alternatives:
+dilate_B (I))
+dilate_C(dilate_D (I)))
+
+Border effects should not be considered for simplicity, i.e.,
+all image pixels should be treated in the same manner.
