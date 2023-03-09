@@ -1,0 +1,48 @@
+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−
+Exercise 07a. Check the idempotence of the 'closing−opening' alternated filters
+for a particular case, using the programs implemented in previous exercises:
+After the following calls, where 'i' denotes the size (an integer number):
+exercise_06a_closing_opening i exercise_07a_input_01.pgm exercise_07a_output_01.pgm
+exercise_06a_closing_opening i exercise_07a_output_01.pgm exercise_07a_output_02.pgm
+exercise_02b_compare exercise_07a_output_01.pgm exercise_07a_output_02.pgm exercise_
+02b_output_01.pgm
+Note: exercise_07a_output_01.pgm and exercise_07a_output_02.pgm
+should be identical.
+Note: use, for example, image cam_74.pgm as the
+exercise_07a_input_01.pgm input image
+
+Command lines:
+exercise_06a_ope2clo2output_01.pgm is created:
+python exercise_06a_closing_opening.py 2 cam_74.pgm exercise_06a_clo2ope2output_01.pgm
+
+exercise_06a_ope4clo4_output_02.pgm is created:
+python exercise_06a_closing_opening.py 2 exercise_06a_clo2ope2output_01.pgm exercise_06a_clo4ope4_output_02.pgm
+
+exercise_05a_output_01.txt is created:
+python exercise_02b_compare.py exercise_06a_clo2ope2output_01.pgm exercise_06a_clo4ope4_output_02.pgm exercise_07a_output_01.txt
+
+
+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−
+Exercise 07b. Idem for the 'opening−closing' alternated filters.
+After the following calls, where 'i' denotes the size (an integer number):
+exercise_07b_opening_closing i exercise_07b_input_01.pgm exercise_07b_output_01.pgm
+;
+exercise_07b_opening_closing i exercise_07b_output_01.pgm exercise_07b_output_02.pgm
+ ;
+exercise_02b_compare exercise_07b_output_01.pgm exercise_07b_output_02.pgm exercise_
+02b_output_01.pgm
+Note: exercise_07b_output_01.pgm and exercise_07b_output_02.pgm
+should be identical.
+Note: use, for example, image cam_74.pgm as the
+exercise_07b_input_01.pgm input image
+
+Command lines:
+exercise_06a_ope2clo2output_01.pgm is created:
+python exercise_06a_opening_closing.py 2 cam_74.pgm exercise_06a_ope2clo2output_01.pgm
+
+exercise_06a_ope4clo4_output_02.pgm is created:
+python exercise_06a_opening_closing.py 2 exercise_06a_ope2clo2output_01.pgm exercise_06a_ope4clo4_output_02.pgm
+
+exercise_05a_output_01.txt is created:
+python exercise_02b_compare.py exercise_06a_ope2clo2output_01.pgm exercise_06a_ope4clo4_output_02.pgm exercise_07b_output_02.txt
+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−
