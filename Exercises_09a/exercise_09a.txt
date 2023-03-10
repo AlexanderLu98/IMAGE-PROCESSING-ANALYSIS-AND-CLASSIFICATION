@@ -1,0 +1,21 @@
+Exercise 09:
+
+Proof the idempotence of the 'closing−opening' alternated filter:
+Firstly we know that the operation of:
+(1)	Closing(I) = Erosion(Dilation(I, S), S)
+(2)	Opening(I) = Dilation(Erosion(I, S), S)
+Where I = input image and S = structuring element
+
+Let’s start by applying the closing-opening filter to an input image I one time:
+closing_opening(I) = Opening(Closing(I)) | We then (1) and (2)
+= Dilation(Erosion(Erosion(Dilation(I, S), S), S), S)
+We will call the output image for X (just to easily differentiate them from each other)
+
+Now we will apply it once more on X and we call this new image for Y:
+ClosingOpening(X) = Opening(Closing(X))
+= Opening(Closing(Dilation(Erosion(Erosion(Dilation(I, S), S), S), S)))
+= Dilation(Erosion(Erosion(Dilation(Dilation(Erosion(Erosion(Dilation(I, S), S), S), S), S), S), S)
+From this we can see that both the Closing and Opening operations have been used twice. We also know that dilation and erosion operation are “idempotent”, which means in layman’s term that it doesn’t change even when operated multiple times. This means we can remove all the redundant operations, giving us:
+Y = Dilation(Erosion(Erosion(Dilation(Erosion(Dilation(I, S), S), S), S), S)
+
+X = Y  thus the closing-opening filter is idempotent. Q.E.D
