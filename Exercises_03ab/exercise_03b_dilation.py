@@ -5,7 +5,7 @@ import numpy as np
 
 #exercise_03b_dilation value_i exercise_03b_input_01.pgm exercise_03b_output_01.pgm
 if len(sys.argv) != 4:
-    print('Start... ADD MORE COMMENTS BEFORE DELIVERY!!!')
+    print('python exercise_03b_dilation.py 1 immed_gray_inv.pgm exercise_03b_dil1_output.pgm')
     sys.exit(1)
 else:
     try:

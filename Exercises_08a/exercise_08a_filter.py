@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 
 if len(sys.argv) != 6:
-    print('Start... ADD MORE COMMENTS BEFORE DELIVERY!!!')
+    print('Example: python exercise_08a_filter.py isn_256.pgm filter_1_opening.pgm filter_2_closing.pgm filter_3_ope_clo.pgm filter_4_clo_ope.pgm')
     sys.exit(1)
 
 else:

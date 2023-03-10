@@ -23,7 +23,7 @@ import numpy as np
 
 
 if len(sys.argv) != 4:
-    print('Start... ADD MORE COMMENTS BEFORE DELIVERY!!!')
+    print('Example: python exercise_02c_sup.py image1.pgm image2.pgm exercise_02c_sup_output_01.pgm')
     sys.exit(1)
 else:
     try:

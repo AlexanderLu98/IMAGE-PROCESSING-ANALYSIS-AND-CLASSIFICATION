@@ -5,7 +5,7 @@ import numpy as np
 
 #exercise_04a_opening value_i exercise_04a_input_01.pgm exercise_04a_output_01.pgm
 if len(sys.argv) != 4:
-    print('Start... ADD MORE COMMENTS BEFORE DELIVERY!!!')
+    print('Example: python exercise_04b_closing.py 1 immed_gray_inv.pgm exercise_04b_clo1_output.pgm')
     sys.exit(1)
 else:
     try:

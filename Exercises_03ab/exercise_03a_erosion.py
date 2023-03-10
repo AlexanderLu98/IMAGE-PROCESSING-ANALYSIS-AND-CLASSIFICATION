@@ -5,7 +5,7 @@ import numpy as np
 
 #exercise_03a_erosion value_i exercise_03a_input_01.pgm exercise_03a_output_01.pgm
 if len(sys.argv) != 4:
-    print('Start... ADD MORE COMMENTS BEFORE DELIVERY!!!')
+    print('Example: python exercise_03a_erosion3.py 1 immed_gray_inv.pgm exercise_03a_ero1_output.pgm')
     sys.exit(1)
 else:
     try:
