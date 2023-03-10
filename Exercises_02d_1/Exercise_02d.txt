@@ -14,11 +14,23 @@ elements.
 It can be observed that the following property holds:
 B = dilate_C (D) = dilate_D (C).
 
-Estimate the number or 'max' operations that must be computed in
-order to process a NxN square input image using the following
+Estimate the number or 'max' operations that must be computed in order to process a NxN square input image using the following
 alternatives:
 dilate_B (I))
 dilate_C(dilate_D (I)))
 
-Border effects should not be considered for simplicity, i.e.,
-all image pixels should be treated in the same manner.
+Border effects should not be considered for simplicity, i.e., all image pixels should be treated in the same manner.
+
+ANSWER:
+We know that the number of pixels of B is MxM while both C and D only have M pixels.
+From the question we can gather that I = NxN (pixels: NxN).
+
+From the text:
+B = dilate_C (D) = dilate_D (C).
+
+1) dilate_B(I)):
+Simply the number of pixels in image nr 1 times pixels in image nr2 => MxMxNxN
+
+2) dilate_C(dilate_D (I))):
+Same principle as before. Firstly dilate_D (I)) = MxNxN.
+Then the whole: MxMxNxN
