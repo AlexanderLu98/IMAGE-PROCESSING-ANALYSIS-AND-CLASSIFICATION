@@ -1,5 +1,5 @@
 """
-As stated in the README I misunderstood the questions so I have created functions that are supposed to work
+As stated in the README.md I misunderstood the questions so I have created functions that are supposed to work
 """
 import numpy as np
 
